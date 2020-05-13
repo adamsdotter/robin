@@ -1,0 +1,65 @@
+// Text color
+$text-color: color(cloud);
+
+// Rhythm
+$base-unit:   8px;
+$base-rhythm: 3;
+$rhythms: (
+  'base':   $base-rhythm,
+  'half':   $base-rhythm / 2,
+  'double': $base-rhythm * 2,
+  'xsmall': 1,
+  'small':  2,
+  'medium': 4,
+  'large':  5
+);
+
+$base-size: 16;
+$sizes: (
+  base: (
+    default: $base-size
+  ),
+  stockholm: (
+    default: 36,
+    small: 32
+  ),
+  madrid: (
+    default: 28,
+    small: 24
+  ),
+  berlin: (
+    default: 20,
+    small: 18
+  ),
+  london: (
+    default: 18,
+    small: 12
+  ),
+  paris: (
+    default: 16,
+    small: 14
+  )
+);
+
+// Layout
+$max-width: 1200px;
+
+// Breakboints
+$mq-breakpoints: (
+  'medium': 568px,
+  'large': 768px,
+  'xlarge': 1024px,
+  'desktop': 1200px,
+);
+
+@font-face {
+  font-family: 'Simple';
+  src: url('/font/the_simple_one_regular.woff2') format('woff2'),
+       url('/font/the_simple_one_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Fonts
+$font-primary: Verdana, sans-serif;
+$font-simple: 'Simple', sans-serif;
