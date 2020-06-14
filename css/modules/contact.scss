@@ -3,11 +3,6 @@
     flex-grow: 1;
     text-align: center;
   
-    @include mq('medium') {
-      flex-grow: 0;
-      margin-right: 0.5rem;
-    }
-  
     @media (min-width: 1024px) and (orientation: landscape) {
       flex-grow: 1;
       margin-left: rhythm(large);
@@ -16,5 +11,16 @@
     a {
       margin-bottom: 2px;
       display: inline-block;
+    }
+
+    @include mq('medium') {
+      a:first-child {
+        &::after {
+          content: ' \2022';
+          padding-right: rhythm(xsmall);
+          padding-left: rhythm(small);
+          padding-top: 4px;
+        }
+      }
     }
   }

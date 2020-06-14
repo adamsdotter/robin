@@ -16,7 +16,7 @@
   @include set-type('stockholm', 'small', $allow-same-line-height-as-size: false);
 
   @include mq('medium') {
-    @include set-type('stockholm', $allow-same-line-height-as-size: false);
+    @include set-type('stockholm', $lines: 6, $allow-same-line-height-as-size: false);
   }
 }
 
