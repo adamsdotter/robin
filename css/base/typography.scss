@@ -52,6 +52,7 @@ h1,
   @include type-stockholm;
 
   margin-bottom: rhythm('small');
+  color: color('robin');
 
   @include mq('medium') {
     margin-bottom: rhythm();
