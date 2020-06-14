@@ -1,0 +1,26 @@
+.social-icons {
+  margin: rhythm(double) auto 0;
+  opacity: 0.9;
+
+  a {
+    width: 3.5rem;
+    display: inline-block;
+    margin: 0 rhythm(xsmall);
+  }
+
+}
+
+.social {
+  display: none;
+  text-align: right;
+  
+  @media (min-width: 1024px) and (orientation: landscape) {
+    margin-right: rhythm(large);
+  }
+}
+  
+  .social img {
+    width: 25px;
+    margin: 4px 0 0;
+    opacity: 0.9;
+  }

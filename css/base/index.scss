@@ -29,10 +29,12 @@ a {
   transition: all ease 200ms;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
-    color: shade($link-color);
-    border-bottom-color: $link-color;
+  @include mq('medium') {
+    &:hover,
+    &:focus {
+      color: shade($link-color);
+      border-bottom-color: $link-color;
+    }
   }
 }
 
