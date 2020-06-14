@@ -1,5 +1,5 @@
 // Text color
-$text-color: color(cloud);
+$text-color: color(cloud, $opacity: 0.95);
 
 // Rhythm
 $base-unit:   8px;
