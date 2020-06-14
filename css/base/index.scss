@@ -28,14 +28,6 @@ a {
   border-bottom: 1px solid transparent;
   transition: all ease 200ms;
   text-decoration: none;
-
-  @include mq('medium') {
-    &:hover,
-    &:focus {
-      color: shade($link-color);
-      border-bottom-color: $link-color;
-    }
-  }
 }
 
 figure {

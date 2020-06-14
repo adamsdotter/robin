@@ -1,0 +1,44 @@
+.areas {
+  display: none;
+  max-width: rem(350);
+  margin: (rhythm('medium') * 2) auto;
+  position: absolute;
+  bottom: rhythm('double');
+  
+  a {
+    display: block;
+
+    &:hover,
+    &:focus {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+    transition: all ease-in 0.2s;
+  }
+
+  // Ipad
+  @media (min-width: 1024px) and (orientation: landscape) {
+    display: block;
+    left: rhythm('double') * 2;
+  }
+
+  @include mq('xlarge') {
+    display: block;
+    left: rhythm('double') * 3;
+  }
+
+  .design {
+    padding: rhythm('xsmall') rhythm() 0;
+  }
+
+  .joinery {
+    padding: 0 rhythm();
+  }
+}
+    

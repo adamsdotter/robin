@@ -12,19 +12,36 @@
       margin: 0 rhythm(small);
     }
   }
+
+  @include mq('xlarge') {
+    display: none;
+  }
 }
 
 .social {
   display: none;
   text-align: right;
-  
-  @media (min-width: 1024px) and (orientation: landscape) {
-    margin-right: rhythm(large);
-  }
-}
-  
-  .social img {
-    width: 25px;
+
+  a {
+    width: 2.3rem;
+    display: inline-block;
     margin: 4px 0 0;
     opacity: 0.9;
   }
+  
+  @include mq('xlarge') {
+    display: block;
+    margin-right: rhythm(double);
+
+    img {
+      transition: all ease-in 0.2s;
+    }
+
+    a:hover,
+    a:focus {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

@@ -7,6 +7,15 @@
 
   a {
     border-bottom: 1px solid;
+
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+
+  span {
+    display: block;
+    margin-bottom: rhythm('xsmall');
   }
 
   @include mq('medium') {
@@ -24,6 +33,10 @@
     padding: rhythm('double') rhythm('double');
     max-width: rem(650px);
   }
+
+  @include mq('xlarge') {
+    max-width: rem(850px);
+  }
 }
 
 .heading-h1 {
@@ -39,29 +52,9 @@
   }
 
   @include mq('xlarge') {
-    max-width: rem(720px);
-    border: 1px solid blue;
+    margin-top: rhythm(double) * 2;
   }
 }
-  
-  // .img-work {
-  //   max-width: rem(280px);
-  
-  //   @include mq('medium') {
-  //     max-width: rem(480px);
-  //   }
-  
-  //   @include mq('large') {
-  //     max-width: rem(540px);
-  //   }
-  // }
-
-.areas {
-  display: none;
-  max-width: 80%;
-  margin: (rhythm('medium') * 2) auto;
-}
-  
 
 h1,
 h2 {
@@ -73,11 +66,7 @@ h2 {
     width: 100%;
 
     @media (min-width: 1024px) and (orientation: landscape) {
-      display: none;
-    }
-
-    @include mq('desktop') {
-      display: none;
+      // display: none;
     }
   }
 }

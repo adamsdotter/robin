@@ -3,11 +3,6 @@
     flex-grow: 1;
     text-align: center;
   
-    @media (min-width: 1024px) and (orientation: landscape) {
-      flex-grow: 1;
-      margin-left: rhythm(large);
-    }
-  
     a {
       margin-bottom: 2px;
       display: inline-block;
@@ -15,11 +10,30 @@
 
     @include mq('medium') {
       a:first-child {
+        padding-right: rhythm(double);
+        position: relative;
+
         &::after {
           content: ' \2022';
-          padding-right: rhythm(xsmall);
-          padding-left: rhythm(small);
           padding-top: 4px;
+          position: absolute;
+          right: 5px;
+        }
+      }
+    }
+
+    @include mq('xlarge') {
+      text-align: left;
+      margin-left: rhythm(double);
+
+      a {
+        &:hover,
+        &:focus {
+          text-shadow: 3px 2px 0 color(robin);
+
+          &::after {
+            text-shadow: none;
+          }
         }
       }
     }

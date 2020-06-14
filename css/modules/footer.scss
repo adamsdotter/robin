@@ -37,13 +37,7 @@ footer {
   
     @include mq('xlarge') {
       font-weight: normal;
-      margin-bottom: rhythm(small);
-    }
-  
-    @media (min-width: 1024px) and (orientation: landscape) {
-      font-weight: normal;
-      text-shadow: none;
-      justify-content: normal;
-      margin-bottom: rhythm(xsmall);
+      margin-bottom: 0;
+      padding: 0;
     }
   }
