@@ -18,6 +18,12 @@
     margin-bottom: rhythm('xsmall');
   }
 
+  small {
+    font-size: 75%;
+    display: block;
+    padding-top: rhythm('small');
+  }
+
   @include mq('medium') {
     @include set-type('madrid', $lines: 5);
 
