@@ -4,6 +4,8 @@
   font-family: $font-simple;
   border: 2px dashed color(white, $opacity: 0.8);
   padding: rhythm('small');
+  animation-duration: 4s;
+  animation-name: textFadeIn;
 
   a {
     border-bottom: 1px solid;
@@ -76,3 +78,35 @@ h2 {
     }
   }
 }
+
+h1 {
+  animation-duration: 2s;
+  animation-name: heading;
+}
+
+@keyframes heading {
+  0% {
+     opacity: 0;
+     transform: translateY(-100%);
+  }
+  50% {
+     opacity: 1;
+     transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} 
