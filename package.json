@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "sass": "^1.26.5"
+    "sass": "^1.32.8"
   }
 }
