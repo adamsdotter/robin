@@ -1,7 +1,7 @@
 $font-size: size('base');
 
 html {
-  font-size: percentage($font-size / 16);
+  font-size: percentage(calc($font-size / 16));
   font-family: $font-primary;
   line-height: calc-line-height($font-size);
 }

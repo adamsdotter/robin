@@ -7,7 +7,7 @@
 }
 
 @function rem($size) {
-  @return (strip-unit($size) / strip-unit($base-size)) * 1rem;
+  @return calc((strip-unit($size) / strip-unit($base-size))) * 1rem;
 }
 
 @function rem-to-px($size) {
@@ -18,7 +18,7 @@
   $rhythm-unit: strip-unit($base-unit);
   $size: strip-unit($size);
 
-  @return ceil($size / $rhythm-unit);
+  @return ceil(calc($size / $rhythm-unit));
 }
 
 // rhythm, helps you keep a vertical rhythm based on your sites baseline grid.
@@ -34,7 +34,7 @@
 @function _line-height($size, $lines) {
   $rhythm-unit: strip-unit($base-unit);
 
-  @return $lines * ($rhythm-unit / $size);
+  @return $lines * calc($rhythm-unit / $size);
 }
 
 @function calc-line-height($size, $lines: auto, $allow-same-line-height-as-size: false) {

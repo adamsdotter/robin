@@ -6,8 +6,8 @@ $base-unit:   8px;
 $base-rhythm: 3;
 $rhythms: (
   'base':   $base-rhythm,
-  'half':   $base-rhythm / 2,
-  'double': $base-rhythm * 2,
+  'half':   calc($base-rhythm / 2),
+  'double': calc($base-rhythm * 2),
   'xsmall': 1,
   'small':  2,
   'medium': 4,
