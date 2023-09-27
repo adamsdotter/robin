@@ -1,6 +1,8 @@
+@use 'sass:math';
+
 @function strip-unit($number) {
   @if type-of($number) == 'number' and not unitless($number) {
-    @return $number / ($number * 0 + 1);
+    @return math.div($number, $number * 0 + 1);
   }
 
   @return $number;
@@ -37,7 +39,11 @@
   @return $lines * calc($rhythm-unit / $size);
 }
 
-@function calc-line-height($size, $lines: auto, $allow-same-line-height-as-size: false) {
+@function calc-line-height(
+  $size,
+  $lines: auto,
+  $allow-same-line-height-as-size: false
+) {
   $size: strip-unit($size);
   $lines: if($lines == auto, lines($size), $lines);
   $result: _line-height($size, $lines);
