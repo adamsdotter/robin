@@ -5,6 +5,19 @@
     font-family: $font-simple;
   }
 
+  a {
+    img {
+      transition: all ease-in 0.2s;
+    }
+
+    &:hover,
+    &:focus {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
   img {
     width: 5rem;
     display: inline-block;
