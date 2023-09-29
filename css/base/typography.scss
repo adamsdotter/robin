@@ -64,13 +64,15 @@ h2,
   @include type-madrid;
 
   margin-bottom: rhythm('small');
+  font-family: $font-simple;
 }
 
 h3,
-.type-paris {
-  @include type-paris;
+.type-berlin {
+  @include type-berlin;
 
-  margin-bottom: rhythm('small');
+  margin-bottom: rhythm();
+  font-family: $font-simple;
 }
 
 h4,
@@ -78,4 +80,10 @@ h4,
   @include type-london;
 
   margin-bottom: rhythm('xsmall');
+}
+
+.type-paris {
+  @include type-paris;
+
+  margin-bottom: rhythm('small');
 }
