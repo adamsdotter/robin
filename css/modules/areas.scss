@@ -4,7 +4,9 @@
   margin: (rhythm('medium') * 2) auto;
   position: absolute;
   bottom: rhythm('double');
-  
+  animation-duration: 3s;
+  animation-name: areasSlideIn;
+
   a {
     display: block;
 
@@ -15,7 +17,7 @@
       }
     }
   }
-  
+
   img {
     width: 100%;
     display: block;
@@ -41,4 +43,3 @@
     padding: rhythm() rhythm() 0;
   }
 }
-    

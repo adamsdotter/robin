@@ -1,5 +1,7 @@
 .partners {
   margin: rhythm(large) auto 0;
+  animation-duration: 6s;
+  animation-name: textFadeIn;
 
   h3 {
     font-family: $font-simple;
