@@ -1,37 +1,13 @@
 .social-icons {
-  margin: rhythm(double) auto 0;
-  opacity: 0.9;
+  margin: rhythm() auto 0;
 
-  a {
-    width: 3rem;
-    display: inline-block;
-    margin: 0 rhythm(xsmall);
-
-    @include mq('medium') {
-      width: 5rem;
-      margin: 0 rhythm(small);
-    }
+  @include mq('medium') {
+    margin-top: rhythm(double);
+    margin-bottom: rhythm('double');
   }
 
-  @include mq('xlarge') {
-    display: none;
-  }
-}
-
-.social {
-  display: none;
-  text-align: right;
-
-  a {
-    width: 2.3rem;
-    display: inline-block;
-    margin: 4px 0 0;
-    opacity: 0.9;
-  }
-  
-  @include mq('xlarge') {
-    display: block;
-    margin-right: rhythm(double);
+  @include mq('large') {
+    margin-top: rhythm(10);
 
     img {
       transition: all ease-in 0.2s;
@@ -42,6 +18,22 @@
       img {
         transform: scale(1.2);
       }
+    }
+  }
+
+  a {
+    width: 5rem;
+    opacity: 0.95;
+    display: inline-block;
+    margin: 0 rhythm(xsmall);
+
+    @include mq('medium') {
+      width: 5rem;
+      margin: 0 rhythm(small);
+    }
+
+    @include mq('large') {
+      width: 6rem;
     }
   }
 }
