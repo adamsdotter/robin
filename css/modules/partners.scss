@@ -1,0 +1,22 @@
+.partners {
+  margin: rhythm(large) auto 0;
+
+  h3 {
+    font-family: $font-simple;
+  }
+
+  img {
+    width: 5rem;
+    display: inline-block;
+    margin: 0 rhythm(xsmall);
+
+    @include mq('medium') {
+      width: 5rem;
+      margin: 0 rhythm(small);
+    }
+
+    @include mq('large') {
+      width: 6rem;
+    }
+  }
+}
