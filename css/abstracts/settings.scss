@@ -19,9 +19,9 @@ $sizes: (
   base: (
     default: $base-size,
   ),
-  berlin: (
-    default: 38,
-    small: 28,
+  oslo: (
+    default: 62,
+    small: 56,
   ),
   stockholm: (
     default: 36,
@@ -30,6 +30,10 @@ $sizes: (
   madrid: (
     default: 28,
     small: 24,
+  ),
+  berlin: (
+    default: 38,
+    small: 28,
   ),
   london: (
     default: 18,

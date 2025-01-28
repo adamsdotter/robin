@@ -53,6 +53,7 @@ h1,
 
   margin-bottom: rhythm('small');
   color: color('robin');
+  font-family: $font-simple;
 
   @include mq('medium') {
     margin-bottom: rhythm();

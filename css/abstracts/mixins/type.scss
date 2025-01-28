@@ -1,4 +1,9 @@
-@mixin set-type($size, $type: default, $lines: auto, $allow-same-line-height-as-size: true) {
+@mixin set-type(
+  $size,
+  $type: default,
+  $lines: auto,
+  $allow-same-line-height-as-size: true
+) {
   @if type-of($size) != number {
     $size: size($size, $type);
   }
@@ -12,11 +17,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin type-stockholm {
-  @include set-type('stockholm', 'small', $allow-same-line-height-as-size: false);
+@mixin type-oslo {
+  @include set-type('oslo', 'small', $allow-same-line-height-as-size: false);
 
   @include mq('medium') {
-    @include set-type('stockholm', $lines: 6, $allow-same-line-height-as-size: false);
+    @include set-type(
+      'oslo',
+      $lines: 8,
+      $allow-same-line-height-as-size: false
+    );
+  }
+}
+
+@mixin type-stockholm {
+  @include set-type(
+    'stockholm',
+    'small',
+    $allow-same-line-height-as-size: false
+  );
+
+  @include mq('medium') {
+    @include set-type(
+      'stockholm',
+      $lines: 6,
+      $allow-same-line-height-as-size: false
+    );
   }
 }
 
