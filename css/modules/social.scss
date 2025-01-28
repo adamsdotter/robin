@@ -11,6 +11,10 @@
   @include mq('large') {
     margin-top: rhythm(10);
 
+    a {
+      will-change: filter;
+    }
+
     img {
       transition: all ease-in 0.2s;
     }

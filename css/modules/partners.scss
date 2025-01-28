@@ -9,6 +9,7 @@
 
   a {
     display: inline-block;
+    will-change: filter;
 
     img {
       transition: all ease-in 0.2s;
