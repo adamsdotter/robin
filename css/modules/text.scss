@@ -2,11 +2,11 @@
   @include type-madrid;
 
   font-family: $font-simple;
-  border: 2px dashed color(white, $opacity: 0.8);
   padding: rhythm('small');
   margin-bottom: rhythm('double');
   animation-duration: 4s;
   animation-name: textFadeIn;
+  box-shadow: 0 0 0.5rem color('robin');
 
   a {
     border-bottom: 1px solid;
