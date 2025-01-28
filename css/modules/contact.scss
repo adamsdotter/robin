@@ -1,40 +1,39 @@
-
 .contact {
-    flex-grow: 1;
-    text-align: center;
-  
-    a {
-      margin-bottom: 2px;
-      display: inline-block;
-    }
+  flex-grow: 1;
+  text-align: center;
 
-    @include mq('medium') {
-      a:first-child {
-        padding-right: rhythm(double);
-        position: relative;
+  a {
+    margin-bottom: 2px;
+    display: inline-block;
+  }
 
-        &::after {
-          content: ' \2022';
-          padding-top: 4px;
-          position: absolute;
-          right: 5px;
-        }
+  @include mq('medium') {
+    a:first-child {
+      padding-right: rhythm(double);
+      position: relative;
+
+      &::after {
+        content: ' \2022';
+        padding-top: 4px;
+        position: absolute;
+        right: 5px;
       }
     }
+  }
 
-    @include mq('xlarge') {
-      text-align: left;
-      margin-left: rhythm(double);
+  @include mq('xlarge') {
+    text-align: left;
+    margin-left: rhythm(double);
 
-      a {
-        &:hover,
-        &:focus {
-          text-shadow: 3px 2px 0 color(robin);
+    a {
+      &:hover,
+      &:focus-visible {
+        text-shadow: 3px 2px 0 color(robin);
 
-          &::after {
-            text-shadow: none;
-          }
+        &::after {
+          text-shadow: none;
         }
       }
     }
   }
+}

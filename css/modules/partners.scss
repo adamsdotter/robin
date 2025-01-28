@@ -8,12 +8,14 @@
   }
 
   a {
+    display: inline-block;
+
     img {
       transition: all ease-in 0.2s;
     }
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       img {
         transform: scale(1.2);
       }
